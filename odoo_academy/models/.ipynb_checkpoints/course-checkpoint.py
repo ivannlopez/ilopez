@@ -32,8 +32,8 @@ class Course(models.Model):
             
             self.total_price = self.base_price + self.additional_fee
         
-        @api.constrains('addittional_fee')
+        @api.constrains('additional_fee')
         def _check_additional_fee(self):
             for record in self:
                 if record.additional_fee < 10.00:
-                    raise ValidateError('Additional Fees cannot be less than 10.00: %s' % record.adittional_fee) 
+                    raise ValidateError('Additional Fees cannot be less than 10.00: %s' % record.additional_fee) 
