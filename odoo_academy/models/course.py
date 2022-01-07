@@ -32,7 +32,7 @@ class Course(models.Model):
             
             self.total_price = self.base_price + self.additional_fee
         
-        @api.constrains('adittional_fee')
+        @api.constrains('addittional_fee')
         def _check_additional_fee(self):
             for record in self:
                 if record.additional_fee < 10.00:
