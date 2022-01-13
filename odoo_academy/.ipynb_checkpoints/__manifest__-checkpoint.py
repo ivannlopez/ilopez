@@ -30,6 +30,7 @@
         'views/sale_views_inheril.xml',
         'views/product_views_inherit.xml',
         'wizard/sale_wizard_view.xml',
+        'report/session_report_template.xml',
 	],
     
 	'demo':[
