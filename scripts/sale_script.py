@@ -1,9 +1,9 @@
 from xmlrpc import client
 
-url = 'https://ivannlopez-ilopez-test3-3999315.dev.odoo.com'
-db = 'ivannlopez-ilopez-test3-3999315'
+url = 'https://ivannlopez-ilopez-test3-4004467.dev.odoo.com'
+db = 'ivannlopez-ilopez-test3-4004467'
 username = 'admin'
-password = 'admin'
+password = 'f55648545132f6d4ff6695d1f1d13e2fb921f4fc'
 
 common = client.ServerProxy("{}/xmlrpc/2/common".format(url))
 print(common.version())
